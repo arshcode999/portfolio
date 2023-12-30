@@ -3,21 +3,7 @@ import b1 from './images/p1.png';
 import b2 from './images/p2.png';
 import b3 from './images/p3.png';
 import uichange from './icons/uichange.svg';
-
-//scroll event
-//slide change image core function
-function one(){
-  document.getElementById("imgbac").setAttribute("src","b1");
-}
-function second(){
-  document.getElementById("imgbac").setAttribute("src","b2");
-}
-function thrid(){
-  document.getElementById("imgbac").setAttribute("src","b3");
-}
-//ends here image core functions
-//slide ends here
-
+import './style.css';
 
 function App() {
   return (
@@ -84,11 +70,13 @@ function App() {
           <hr id='hra' />
         </center>
         <div id='backg'>
-          <img id="imgbac" src={b1} />
+          <img className="imgbac" id="img1" src={b1} />
+          <img className="imgbac" id="img2" src={b2} />
+          <img className="imgbac" id="img3" src={b3} />
         </div>
          // this gallery
         <div id='gallery'>
-            <img className='iconui' id='ui1' src={uichange} />
+            <img className='iconui' href='#img3' id='ui1' src={uichange} />
             <img className='iconui' id='ui2' src={uichange} />
             <img className='iconui' id='ui3' src={uichange} />
         </div>

@@ -2,20 +2,6 @@
   margin: 0;
   padding: 0;
 }
-@media screen and (min-width: 300px) {
-  #navbar{
-    background-color: red;
-  }
-  #des {
-    margin: 10px;
-    padding: 20px;
-    border: 2px solid black;
-    color: black;
-    border-radius: 10px;
-    width: auto;
-    line-height: 1.5;
-}
-}
 
 body{
   background-color: black;
@@ -158,7 +144,10 @@ body{
 }
 #backg {
   padding: 20px;
-  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 #gallery{
   z-index: 999;
@@ -166,7 +155,7 @@ body{
   justify-content: center;
   align-items: center;
 }
-#imgbac{
+.imgbac{
   height: 100%;
   width: 98%;
 }

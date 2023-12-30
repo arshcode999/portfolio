@@ -1,0 +1,31 @@
+@media only screen and (min-width: 250px) and (max-width: 450px) {
+    #ifo{
+        font-family: monospace;
+    }
+      #des {
+        margin: 20px;
+        padding: 10px;
+        width: 98%;
+        line-height: 1.6;
+    }
+    #backg {
+      padding: 10px;
+    }
+    #projects {
+        padding: 10px;
+    }
+    #descript {
+        width: auto;
+        margin: 10px;
+        padding: 10px;
+    }
+    #getintouch {
+        width: auto;
+    }
+    #contactform {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    }
+    
