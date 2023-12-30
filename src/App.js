@@ -28,11 +28,11 @@ function App() {
           <p id='logoh'>Portfolio</p>
         </div>
         <ul id='navele'>
-          <li className='navli'><a className='nava' href='/'>Home</a></li>
+          <li className='navli'><a className='nava' href='#header'>Home</a></li>
           <li className='navli'><a className='nava' href='#aboutme'>About</a></li>
-          <li className='navli'><a className='nava' href='/'>Projects</a></li>
-          <li className='navli'><a className='nava' href='/'>Achievements</a></li>
-          <li className='navli'><a className='nava' href='/'>Contact me</a></li>
+          <li className='navli'><a className='nava' href='#projects'>Projects</a></li>
+          <li className='navli'><a className='nava' href='#achive'>Achievements</a></li>
+          <li className='navli'><a className='nava' href='#contact'>Contact me</a></li>
         </ul>
       </div>
       <div id='header'>
@@ -104,17 +104,13 @@ function App() {
         <div id='groupskilldes'>
           <div id='descript'>
             <p id='dsecf'>
-              Hello,
-              <br />i have theory knowledge.
-              <br />And going to apply it in my practicle projects,
-              <br />
-              Aspiring IT Professional: I am deeply passionate about technology and business, constantly seeking new knowledge. Currently, I am pursuing a BCA from JIMS, Vasant Kunj (IP University)1.
+              <span className='boldhead'>Aspiring IT Professional:</span> I am deeply passionate about technology and business, constantly seeking new knowledge. Currently, I am pursuing a BCA from JIMS, Vasant Kunj (IP University)1.
 <br/>
-Continuous Learner: My confidence in learning new skills and adapting quickly to new situations has been a cornerstone of my educational journey.
+<span className='boldhead'>Continuous Learner:</span> My confidence in learning new skills and adapting quickly to new situations has been a cornerstone of my educational journey.
 <br/>
-Certifications and Courses: I have completed several certifications, including a Crash Course on Python from Google, Data Analysis with Python from IBM, and Introduction to Cyber Attacks from New York University, among others.
+<span className='boldhead'>Certifications and Courses:</span> I have completed several certifications, including a Crash Course on Python from Google, Data Analysis with Python from IBM, and Introduction to Cyber Attacks from New York University, among others.
 <br/>
-Contributions to Web Development: I have shared insights on problem-solving techniques in web development that are crucial for staying ahead of the curve, emphasizing testing, clear coding practices, strategic thinking, and systematic approaches.
+<span className='boldhead'>Contributions to Web Development:</span> I have shared insights on problem-solving techniques in web development that are crucial for staying ahead of the curve, emphasizing testing, clear coding practices, strategic thinking, and systematic approaches.
             </p>
           </div>
 
