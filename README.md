@@ -25,7 +25,7 @@ This website is still under development and will be uploaded soon. Some of the f
 ## Technologies Used
 
 This website is built using HTML, CSS, and JavaScript.
-React js frame work also.
+React js framework also.
 
 ## Feedback and Suggestions
 
