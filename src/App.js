@@ -3,7 +3,24 @@ import b1 from './images/p1.png';
 import b2 from './images/p2.png';
 import b3 from './images/p3.png';
 import uichange from './icons/uichange.svg';
+import menu from './icons/menu.svg';
+import close from './icons/close.svg';
 import './style.css';
+
+function menfire(){
+  document.getElementById("mu").style.height="10%";
+  document.getElementById("navele").style.visibility="visible";
+  document.querySelector(".App").style.zIndex="1";
+  document.getElementById("navele").style.zIndex="999";
+  document.getElementById("muroc").style.visibility="hidden";
+  document.getElementById("muroclose").style.visibility="visible";
+}
+function menclose(){
+  document.getElementById("muroclose").style.visibility="hidden";
+  document.getElementById("mu").style.height="auto";
+  document.getElementById("navele").style.visibility="hidden";
+  document.getElementById("muroc").style.visibility="visible";
+}
 
 function App() {
   return (
@@ -20,6 +37,10 @@ function App() {
           <li className='navli'><a className='nava' href='#achive'>Achievements</a></li>
           <li className='navli'><a className='nava' href='#contact'>Contact me</a></li>
         </ul>
+        <div id='mu'>
+          <img id='muroc' onClick={menfire} src={menu}/>
+          <img id='muroclose' onClick={menclose} src={close}/>
+        </div>
       </div>
       <div id='header'>
         <br />
@@ -74,13 +95,12 @@ function App() {
           <img className="imgbac" id="img2" src={b2} />
           <img className="imgbac" id="img3" src={b3} />
         </div>
-         // this gallery
+
         <div id='gallery'>
             <img className='iconui' href='#img3' id='ui1' src={uichange} />
             <img className='iconui' id='ui2' src={uichange} />
             <img className='iconui' id='ui3' src={uichange} />
         </div>
-        // this will ends here
       </div>
 
       <div id='achive'>

@@ -1,58 +1,77 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   background-color: black;
   color: white;
 }
+#mu{
+  visibility: hidden;
+}
+#muroc {
+  height: 20px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+#muroclose{
+  height: 20px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
 /*nav bar formatting*/
 /*logo formatting start here*/
-#logo{
+#logo {
   padding: 10px;
 }
-#logoh{
+
+#logoh {
   padding: 10px;
   margin: 10px;
   color: white;
   font-size: 24px;
   font-weight: 800;
 }
+
 /*logo formatting ends here*/
-#navbar{
+#navbar {
   position: sticky;
   margin: 10px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   top: 0;
   background-color: black;
   border-radius: 10px;
 }
+
 #navele {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-.navli{
+
+.navli {
   margin: 2px;
   padding: 10px;
   list-style: none;
 }
-.nava{
+
+.nava {
   text-decoration: none;
   border-radius: 10px;
   padding: 10px;
   color: white;
 }
-.nava:hover{
+
+.nava:hover {
   border: 2px solid white;
   color: white;
 }
-#hireme{
+
+#hireme {
   text-decoration: none;
   color: white;
   padding: 10px;
@@ -61,62 +80,73 @@ body{
   font-size: 20px;
   line-height: 6;
 }
-#hireme:hover{
+
+#hireme:hover {
   background-color: white;
   color: black;
   border: none;
 }
+
 /*nav bar ended*/
 /*header section*/
-#header{
+#header {
   background-color: black;
   color: white;
   padding: 20px;
   height: auto;
 }
-#greet{
+
+#greet {
   color: rgb(228, 225, 225);
   font-weight: 600;
   font-size: 18px;
   font-family: 'Courier New', Courier, monospace;
 }
-#namefor{
+
+#namefor {
   color: rgb(187, 187, 241);
 }
-#name{
+
+#name {
   padding: 10px;
   font-size: 120px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.spani{
+
+.spani {
   color: rgb(187, 187, 241);
 }
-#ifo{
+
+#ifo {
   font-size: 18px;
   font-family: cursive;
 }
+
 /*header section*/
 /*about me start here*/
-#aboutme{
+#aboutme {
   background-color: white;
   color: black;
   text-align: center;
   padding: 10px;
 }
-#hra{
+
+#hra {
   border: 4px solid rgb(187, 187, 241);
   border-radius: 10px;
   width: 100px;
   align-self: center;
   margin: 10px;
 }
-#groupabout{
+
+#groupabout {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-#des{
+
+#des {
   margin: 20px;
   padding: 40px;
   border: 2px solid black;
@@ -125,23 +155,28 @@ body{
   width: 40%;
   line-height: 2;
 }
-#des:hover{
+
+#des:hover {
   background-color: black;
   color: white;
 }
-#photo{
+
+#photo {
   height: 300px;
   margin: 40px;
   border-radius: 100%;
 }
-#hra{
+
+#hra {
   background-color: black;
 }
+
 /*abount me ends here*/
 /* projects section start here*/
-#projects{
+#projects {
   padding: 40px;
 }
+
 #backg {
   padding: 20px;
   display: flex;
@@ -149,50 +184,60 @@ body{
   align-items: center;
   overflow: hidden;
 }
-#gallery{
+
+#gallery {
   z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.imgbac{
+
+.imgbac {
   height: 100%;
   width: 98%;
 }
-.iconui{
+
+.iconui {
   height: 20px;
   background-color: white;
   border-radius: 20px;
   margin: 20px;
 }
+
 /*start here subui clicked*/
-#ui1:hover{
-  background-color: rgb(187, 187, 241); 
-}
-#ui2:hover{
+#ui1:hover {
   background-color: rgb(187, 187, 241);
 }
-#ui3:hover{
+
+#ui2:hover {
   background-color: rgb(187, 187, 241);
 }
+
+#ui3:hover {
+  background-color: rgb(187, 187, 241);
+}
+
 /*ends here subui cliked*/
 
 /* projects section ends here*/
-.boldhead{
+.boldhead {
   font-style: italic;
   font-weight: 1000;
   font-size: 20px;
 }
-.boldhead:hover{
+
+.boldhead:hover {
   background-color: antiquewhite;
 }
+
 /*achivemets section start here*/
-#achive{
+#achive {
   background-color: white;
   color: black;
   padding: 20px;
 }
-#rangeo{
+
+#rangeo {
   margin: 10px;
   border: 4px solid white;
   padding: 0;
@@ -201,7 +246,8 @@ body{
   width: 120px;
   box-shadow: 1px 1px black;
 }
-.rangei{
+
+.rangei {
   background-color: black;
   margin: 1px;
   border-radius: 10px;
@@ -209,25 +255,29 @@ body{
   border: 1px solid white;
   padding: 0;
 }
-#skillgroup{
+
+#skillgroup {
   background-color: rgb(187, 187, 241);
   border-radius: 10px;
   box-shadow: 1px 1px black;
   padding: 10px;
   width: auto;
 }
-.skillitem{
+
+.skillitem {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
 }
-.skhead{
+
+.skhead {
   color: white;
   text-align: left;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#groupskilldes{
+
+#groupskilldes {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,40 +285,50 @@ body{
   padding: 10px;
   margin: 20px;
 }
-#descript{
+
+#descript {
   padding: 10px;
   margin: 20px;
   width: 50%;
 }
-#dsecf{
+
+#dsecf {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   line-height: 2;
 }
+
 /* skill progress start here*/
 #uni1 {
   width: 90px;
 }
+
 #uni2 {
   width: 80px;
 }
+
 #uni3 {
   width: 70px;
 }
+
 #uni4 {
   width: 90px;
 }
+
 #uni5 {
   width: 60px;
 }
+
 #uni6 {
   width: 85px;
 }
+
 /*skill progress ends here*/
-.skhead1{
+.skhead1 {
   color: black;
   font-size: x-small;
 }
-#read{
+
+#read {
   padding: 10px;
   border-radius: 10px;
   margin: 20px;
@@ -276,21 +336,24 @@ body{
   color: white;
   background-color: black;
 }
-#read:hover{
+
+#read:hover {
   border: 1px solid black;
   color: black;
   background-color: white;
 }
-#hra1{
+
+#hra1 {
   border: 4px solid white;
   border-radius: 10px;
   width: 100px;
   align-self: center;
   margin: 10px;
 }
+
 /*achievements section ends here*/
 /*contact sectcion start here*/
-#contact{
+#contact {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,34 +362,40 @@ body{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-#getintouch{
+
+#getintouch {
   margin: 10px;
   padding: 10px;
   width: 40%;
 }
-#contactform{
+
+#contactform {
   margin: 10px;
   padding: 10px;
   border: 2px solid white;
   border-radius: 10px;
 }
-.formgroup{
+
+.formgroup {
   padding: 10px;
   margin: 10px;
   background-color: rgb(37, 37, 37);
   border-radius: 10px;
 }
-.formlab{
+
+.formlab {
   padding: 10px;
   margin: 10px;
 }
-.forminput{
+
+.forminput {
   height: 30px;
   width: 60%;
   border-radius: 10px;
   border: none;
 }
-#forbutton{
+
+#forbutton {
   height: 30px;
   width: 100%;
   background-color: white;
@@ -334,31 +403,37 @@ body{
   border-radius: 10px;
   border: none;
 }
-#forbutton:hover{
+
+#forbutton:hover {
   background-color: black;
   color: white;
   border: 2px solid white;
 }
+
 .forminput::placeholder {
   padding: 2px;
   color: grey;
   font-size: 14px;
   font-family: 'Courier New', Courier, monospace;
 }
-#teareafo::placeholder{
+
+#teareafo::placeholder {
   padding: 2px;
   color: grey;
   font-size: 14px;
   font-family: 'Courier New', Courier, monospace;
 }
-.removforem{
+
+.removforem {
   background: none;
 }
-#emailme{
+
+#emailme {
   text-decoration: none;
   color: white;
 }
-#emailme:hover{
+
+#emailme:hover {
   background-color: white;
   color: black;
   margin: 10px;
