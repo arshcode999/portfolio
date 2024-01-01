@@ -3,23 +3,25 @@ import b1 from './images/p1.png';
 import b2 from './images/p2.png';
 import b3 from './images/p3.png';
 import uichange from './icons/uichange.svg';
+import linkedin from './icons/linkedin.svg';
+import gicon from './icons/github.svg';
 import menu from './icons/menu.svg';
 import close from './icons/close.svg';
 import './style.css';
 
-function menfire(){
-  document.getElementById("mu").style.height="10%";
-  document.getElementById("navele").style.visibility="visible";
-  document.querySelector(".App").style.zIndex="1";
-  document.getElementById("navele").style.zIndex="999";
-  document.getElementById("muroc").style.visibility="hidden";
-  document.getElementById("muroclose").style.visibility="visible";
+function menfire() {
+  document.getElementById("mu").style.height = "10%";
+  document.getElementById("navele").style.visibility = "visible";
+  document.querySelector(".App").style.zIndex = "1";
+  document.getElementById("navele").style.zIndex = "999";
+  document.getElementById("muroc").style.visibility = "hidden";
+  document.getElementById("muroclose").style.visibility = "visible";
 }
-function menclose(){
-  document.getElementById("muroclose").style.visibility="hidden";
-  document.getElementById("mu").style.height="auto";
-  document.getElementById("navele").style.visibility="hidden";
-  document.getElementById("muroc").style.visibility="visible";
+function menclose() {
+  document.getElementById("muroclose").style.visibility = "hidden";
+  document.getElementById("mu").style.height = "auto";
+  document.getElementById("navele").style.visibility = "hidden";
+  document.getElementById("muroc").style.visibility = "visible";
 }
 
 function App() {
@@ -38,8 +40,8 @@ function App() {
           <li className='navli'><a className='nava' href='#contact'>Contact me</a></li>
         </ul>
         <div id='mu'>
-          <img id='muroc' onClick={menfire} src={menu}/>
-          <img id='muroclose' onClick={menclose} src={close}/>
+          <img alt="controle-button-icons" id='muroc' onClick={menfire} src={menu} />
+          <img alt="controle-button-icons" id='muroclose' onClick={menclose} src={close} />
         </div>
       </div>
       <div id='header'>
@@ -74,13 +76,29 @@ function App() {
               <br />Feel free to reach out and connect with me!
             </p>
           </div>
+          <div id='profilebg'>
+            <img alt="profile image" id='photo' className='bgresvg' src="https://media.licdn.com/dms/image/D4E03AQEGzU446nLasg/profile-displayphoto-shrink_200_200/0/1688484460420?e=2147483647&v=beta&t=2K8DHyPxNy_IQ1Ig-3xyifF7XlV096SY_Czls0gOvRs" />
+            <center>
+              <hr id='hra' />
+              <h1>Arsh</h1>
+            </center>
+          </div>
+          <br/>
           <div>
-          <img id='photo' src='https://arshcode999.github.io/portfolio/images/profile.jpg' />
-          <center>
-          <hr id='hra' />
-          <h1>Arsh</h1>
-        </center>
-        </div>
+            <center>
+              <h1 id='diffren'>Articles</h1><p><sub>by me</sub></p>
+              <hr id='hra' />
+            </center>
+            <div id="card">
+              <img alt="article bg image" src="https://media.licdn.com/dms/image/D4D12AQHsRQCEI8BFrQ/article-cover_image-shrink_720_1280/0/1697107212321?e=2147483647&v=beta&t=rbk1zwrxhfM54piuh4RTk7WxIhUIODGFPK9ov67xseM" class="img-card" />
+              <div id="info-a">
+                <h6 class="card-h">BPM: A Cornerstone of Modern Business Success</h6>
+                <hr />
+                <p class="card-p">Lack of systematic business processes can lead to challenges in managing operations effectively</p>
+              </div>
+              <a href="https://www.linkedin.com/pulse/bpm-cornerstone-modern-business-success-md-arsh?trk=public_profile_article_view" class="explore" target="_blank">Explore More</a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -91,15 +109,15 @@ function App() {
           <hr id='hra' />
         </center>
         <div id='backg'>
-          <img className="imgbac" id="img1" src={b1} />
-          <img className="imgbac" id="img2" src={b2} />
-          <img className="imgbac" id="img3" src={b3} />
+          <img alt="project-sample image" className="imgbac" id="img1" src={b1} />
+          <img alt="project-sample image" className="imgbac" id="img2" src={b2} />
+          <img alt="project-sample image" className="imgbac" id="img3" src={b3} />
         </div>
 
         <div id='gallery'>
-            <img className='iconui' href='#img3' id='ui1' src={uichange} />
-            <img className='iconui' id='ui2' src={uichange} />
-            <img className='iconui' id='ui3' src={uichange} />
+          <img alt="icons" className='iconui' href='#img3' id='ui1' src={uichange} />
+          <img alt="icons" className='iconui' id='ui2' src={uichange} />
+          <img alt="icons" className='iconui' id='ui3' src={uichange} />
         </div>
       </div>
 
@@ -112,22 +130,22 @@ function App() {
         <div id='groupskilldes'>
           <div id='descript'>
             <p id='dsecf'>
-              <span className='boldhead'>Aspiring IT Professional:</span> I am deeply passionate about technology and business, constantly seeking new knowledge. Currently, I am pursuing a BCA from JIMS, Vasant Kunj (IP University)1.
-<br/>
-<span className='boldhead'>Continuous Learner:</span> My confidence in learning new skills and adapting quickly to new situations has been a cornerstone of my educational journey.
-<br/>
-<span className='boldhead'>Certifications and Courses:</span> I have completed several certifications, including a Crash Course on Python from Google, Data Analysis with Python from IBM, and Introduction to Cyber Attacks from New York University, among others.
-<br/>
-<span className='boldhead'>Contributions to Web Development:</span> I have shared insights on problem-solving techniques in web development that are crucial for staying ahead of the curve, emphasizing testing, clear coding practices, strategic thinking, and systematic approaches.
+              <span className='boldhead'>Aspiring IT Professional:</span> I am deeply passionate about technology and business, constantly seeking new knowledge. Currently, I am pursuing a BCA from <span className='boldbody'>JIMS, Vasant Kunj (IP University)</span>.
+              <br />
+              <span className='boldhead'>Continuous Learner:</span> My confidence in <span className='boldbody'>learning new skills and adapting quickly</span> to new situations has been a cornerstone of my educational journey.
+              <br />
+              <span className='boldhead'>Certifications and Courses:</span> I have completed several certifications, including a <span className='boldbody'>Crash Course on Python from Google</span>, <span className='boldbody'>Data Analysis with Python from IBM</span>, and <span className='boldbody'>Introduction to Cyber Attacks from New York University</span>, <span className='boldbody'>Frontend Web Development from Meta</span>, among others.
+              <br />
+              <span className='boldhead'>Contributions to Web Development:</span> I have shared insights on problem-solving techniques in web development that are crucial for staying ahead of the curve, emphasizing testing, clear coding practices, strategic thinking, and systematic approaches.
             </p>
           </div>
 
           <div id='skillgroup'>
-          <center>
-          <h1>Skills</h1>
+            <center>
+              <h1>Skills</h1>
 
-          <hr id='hra1' />
-          </center>
+              <hr id='hra1' />
+            </center>
             <div className='skillitem'>
               <h2 className='skhead'>HTML</h2>
               <div id='skills'>
@@ -202,36 +220,44 @@ function App() {
       <div id='contact'>
         <div id='getintouch'>
           <h1>Get in Touch</h1>
-          <br/>
+          <br />
           <p>
             Hey, i am Currently looking for part-time job or intenship as a student, learning the technology.
-            <br/>
-            <br/>
-            Kindly reach out me on my email at<br/>
-            <br/><a id='emailme' href='/' target='mailto:arsh.devloper@gamil.com'>arsh.devloper@gamil.com</a>
+            <br />
+            <br />
+            Kindly reach out me on my email at<br />
+            <br /><a id='emailme' href='/' target='mailto:arsh.devloper@gamil.com'>arsh.devloper@gamil.com</a>
           </p>
+          <div>
+            <a href='https://in.linkedin.com/in/arshmd' target='_blank'>
+            <img id='linkedicon' className='socialconnt' alt='social-media-icon' src={linkedin}/>
+            </a>
+            <a href='https://github.com/arshcode999' target='_blank'>
+            <img id='gicon' className='socialconnt' alt='social-media-icon' src={gicon}/>
+            </a>
+          </div>
         </div>
         <div id='contactform'>
-        <center>
-          <h1>Contact me</h1>
+          <center>
+            <h1>Contact me</h1>
 
-          <hr id='hra' />
-        </center>
+            <hr id='hra' />
+          </center>
           <form id='conform'>
-          <div className='formgroup'>
-            <label className='formlab'>Name :</label><input className="forminput" type='text' placeholder='Enter Name' required/>
+            <div className='formgroup'>
+              <label className='formlab'>Name :</label><input className="forminput" type='text' placeholder='Enter Name' required />
             </div>
             <div className='formgroup'>
-            <label className='formlab'>Email :</label><input className="forminput" type='email' placeholder='Enter Email' required/>
+              <label className='formlab'>Email :</label><input className="forminput" type='email' placeholder='Enter Email' required />
             </div>
             <div className='formgroup'>
-            <label className='formlab'>Company :</label><input className="forminput" type='text' placeholder='Enter Company' required/>
+              <label className='formlab'>Company :</label><input className="forminput" type='text' placeholder='Enter Company' required />
             </div>
             <div className='formgroup removforem'>
               <textarea cols="42" rows="5" id='teareafo' placeholder='Enter the message'></textarea>
             </div>
             <div className='formgroup removforem'>
-              <input type='submit' id='forbutton'/>
+              <input type='submit' id='forbutton' />
             </div>
           </form>
         </div>

@@ -12,7 +12,9 @@
         font-size: auto;
     }
     
-
+    #photo {
+        height: 200px;
+      }
     /*logo formatting ends here*/
 /*resposive start here*/
 #navele{
@@ -86,7 +88,9 @@
     #getintouch {
         width: auto;
     }
-
+    .socialconnt{
+        height: 25px;
+      }
     #contactform {
         padding: 0;
         margin: 0;

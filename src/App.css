@@ -147,29 +147,92 @@ body {
 }
 
 #des {
-  margin: 20px;
-  padding: 40px;
+  margin: 10px;
+  padding: 20px;
   border: 2px solid black;
   color: black;
   border-radius: 10px;
-  width: 40%;
-  line-height: 2;
+  width: auto;
+  line-height: 1.6;
 }
 
 #des:hover {
   background-color: black;
   color: white;
 }
-
+#profilebg{
+  background-color: rgb(233 233 241);
+  border-radius: 20px;
+  padding: 2px;
+  box-shadow: 1px 1px gray;
+  margin-bottom: 4px;
+}
 #photo {
   height: 300px;
   margin: 40px;
   border-radius: 100%;
+  box-shadow: 1px 1px 2px 2px rgb(219, 218, 218);
 }
 
 #hra {
   background-color: black;
 }
+/*card css start here*/
+
+#card {
+	border: 2px solid rgb(187, 187, 241);
+  box-shadow: 1px 1px grey;
+	border-radius: 6px;
+	margin: 20px;
+	padding: 10px;
+	height: 400px;
+	width: 250px;
+	background-color: white;
+	color: black;
+	z-index: 0.2;
+}
+
+
+.img-card {
+	height: 40%;
+	width: 250px;
+	margin: 2px;
+	/*border: 1px solid white;*/
+	border-radius: 10px;
+}
+
+#info-a {
+	margin: 10px;
+	padding: 8px;
+	/*border: 1px solid white;*/
+}
+
+.card-h {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.card-p {
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+.explore {
+	text-decoration: none;
+  background-color: rgb(187, 187, 241);
+	color: darkblue;
+	padding: 12px;
+	margin: 20px;
+	border-radius: 10px;
+	display: block;
+}
+
+.explore:hover {
+	border: 2px solid darkblue;
+	color: rgb(1, 1, 95);
+}
+
+/*card css ends here*/
 
 /*abount me ends here*/
 /* projects section start here*/
@@ -350,7 +413,15 @@ body {
   align-self: center;
   margin: 10px;
 }
-
+.boldbody{
+  color: rgb(123, 123, 236);
+}
+.boldbody::first-letter{
+  color: rgb(39, 39, 187);
+}
+#diffren{
+  color: rgb(112, 112, 112);
+}
 /*achievements section ends here*/
 /*contact sectcion start here*/
 #contact {
@@ -440,5 +511,19 @@ body {
   padding: 10px;
   border-radius: 10px;
 }
-
+.socialconnt{
+  background-color: white;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 2px;
+}
+#linkedicon:hover{
+  background-color: rgb(187, 187, 241);
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+#gicon:hover{
+  background-color: rgb(187, 187, 241);
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
 /*contact section ends here*/
