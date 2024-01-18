@@ -177,6 +177,32 @@ body {
 #hra {
   background-color: black;
 }
+/*gcertified starts here*/
+#gcertified{
+  margin: 10px;
+}
+#g{
+  color: #4285F4;
+}
+#o1{
+  color: #EA4335;
+}
+#o2{
+  color: #FBBC05;
+}
+#g1g{
+  color: #4285F4;
+}
+#l{
+  color: #34A853;
+}
+#e{
+  color: #EA4335;
+}
+#uicert{
+  font-size: 25px;
+}
+/*gcertified ends here*/
 /*card css start here*/
 
 #card {

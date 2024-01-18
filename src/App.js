@@ -77,13 +77,17 @@ function App() {
             </p>
           </div>
           <div id='profilebg'>
-            <img alt="profile image" id='photo' className='bgresvg' src="https://media.licdn.com/dms/image/D4E03AQEGzU446nLasg/profile-displayphoto-shrink_200_200/0/1688484460420?e=2147483647&v=beta&t=2K8DHyPxNy_IQ1Ig-3xyifF7XlV096SY_Czls0gOvRs" />
+            <img alt="profile image" id='photo' className='bgresvg' src="https://media.licdn.com/dms/image/D5603AQG7j64lBR5fAA/profile-displayphoto-shrink_200_200/0/1705372207571?e=2147483647&v=beta&t=NloSSa-AC_UyBfB1GP-8eleEMIw1wz_RusBEIzhCfcE" />
             <center>
               <hr id='hra' />
               <h1>Arsh</h1>
             </center>
           </div>
           <br/>
+            <div id="gcertified">
+              <img alt="google certified" src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/92077477" />
+              <h6 class="card-h" id='uicert'>I'm <span id='g'>G</span><span id='o1'>o</span><span id='o2'>o</span><span id='g1g'>g</span><span id='l'>l</span><span id='e'>e</span> Play certified</h6>
+          </div>
           <div>
             <center>
               <h1 id='diffren'>Articles</h1><p><sub>by me</sub></p>
