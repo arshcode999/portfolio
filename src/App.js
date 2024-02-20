@@ -30,7 +30,7 @@ function App() {
 
       <div id='navbar'>
         <div id='logo'>
-          <p id='logoh'>Portfolio</p>
+          <p id='logoh'>Arsh</p>
         </div>
         <ul id='navele'>
           <li className='navli'><a className='nava' href='#header'>Home</a></li>
@@ -66,6 +66,16 @@ function App() {
         </center>
 
         <div id='groupabout'>
+          <div id='arsh_intro'>
+
+          <div id='profilebg'>
+            <img alt="profile image" id='photo' className='bgresvg' src="https://media.licdn.com/dms/image/D5603AQG7j64lBR5fAA/profile-displayphoto-shrink_200_200/0/1705372207571?e=2147483647&v=beta&t=NloSSa-AC_UyBfB1GP-8eleEMIw1wz_RusBEIzhCfcE" />
+            <center>
+              <hr id='hra' />
+              <h1>Arsh</h1>
+            </center>
+          </div>
+
           <div id='des'>
             <p>
               Welcome to my personal website!
@@ -76,14 +86,11 @@ function App() {
               <br />Feel free to reach out and connect with me!
             </p>
           </div>
-          <div id='profilebg'>
-            <img alt="profile image" id='photo' className='bgresvg' src="https://media.licdn.com/dms/image/D5603AQG7j64lBR5fAA/profile-displayphoto-shrink_200_200/0/1705372207571?e=2147483647&v=beta&t=NloSSa-AC_UyBfB1GP-8eleEMIw1wz_RusBEIzhCfcE" />
-            <center>
-              <hr id='hra' />
-              <h1>Arsh</h1>
-            </center>
+
+        
           </div>
           <br/>
+          <div id='about_ex'>
             <div id="gcertified">
               <img alt="google certified" src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/92077477" />
               <h6 class="card-h" id='uicert'>I'm <span id='g'>G</span><span id='o1'>o</span><span id='o2'>o</span><span id='g1g'>g</span><span id='l'>l</span><span id='e'>e</span> Play certified</h6>
@@ -103,6 +110,25 @@ function App() {
               <a href="https://www.linkedin.com/pulse/bpm-cornerstone-modern-business-success-md-arsh?trk=public_profile_article_view" class="explore" target="_blank">Explore More</a>
             </div>
           </div>
+
+
+          <div>
+            <center>
+              <h1 id='diffren'>Lastest Project</h1><p><sub>by me</sub></p>
+              <hr id='hra' />
+            </center>
+            <div id="card">
+              <img alt="article bg image" src="https://raw.githubusercontent.com/arshcode999/Javscript-Mini-Projects/main/30%20days%2030%20projects.png" class="img-card" />
+              <div id="info-a">
+                <h6 class="card-h">30 Days 30 Projects</h6>
+                <hr />
+                <p class="card-p">This project undergoing on you can check repo helps me to build a strong foundation in javscript</p>
+              </div>
+              <a href="https://github.com/arshcode999/Javscript-Mini-Projects" class="explore" target="_blank">Explore More</a>
+            </div>
+          </div>
+
+          </div>
         </div>
       </div>
 
@@ -113,16 +139,39 @@ function App() {
           <hr id='hra' />
         </center>
         <div id='backg'>
-          <img alt="project-sample image" className="imgbac" id="img1" src={b1} />
-          <img alt="project-sample image" className="imgbac" id="img2" src={b2} />
-          <img alt="project-sample image" className="imgbac" id="img3" src={b3} />
-        </div>
+          <div id="card">
+              <img alt="article bg image" src={b1} class="img-card" />
+              <div id="info-a">
+                <h6 class="card-h">Grocery website</h6>
+                <hr />
+                <p class="card-p">This is my first website whiich i devloped through out the learning the Basic Html, CSS</p>
+              </div>
+              <a href="https://github.com/arshcode999/Grocery" class="explore" target="_blank">Explore More</a>
+            </div>
 
-        <div id='gallery'>
-          <img alt="icons" className='iconui' href='#img3' id='ui1' src={uichange} />
-          <img alt="icons" className='iconui' id='ui2' src={uichange} />
-          <img alt="icons" className='iconui' id='ui3' src={uichange} />
+            <div id="card">
+              <img alt="article bg image" src={b2} class="img-card" />
+              <div id="info-a">
+                <h6 class="card-h">Soft Drink Website</h6>
+                <hr />
+                <p class="card-p">This project is challenge for me to design ui through the HTML , CSS and i accepted this project and completed with in time.</p>
+              </div>
+              <a href="https://github.com/arshcode999/Soft-drink" class="explore" target="_blank">Explore More</a>
+            </div>
+
+            <div id="card">
+              <img alt="article bg image" src={b3} class="img-card" />
+              <div id="info-a">
+                <h6 class="card-h">Travel website</h6>
+                <hr />
+                <p class="card-p">This Project help me to clear css concepts like Z-index and many more.</p>
+              </div>
+              <a href="https://github.com/arshcode999/Travel" class="explore" target="_blank">Explore More</a>
+            </div>
+
         </div>
+        
+
       </div>
 
       <div id='achive'>
@@ -258,7 +307,7 @@ function App() {
               <label className='formlab'>Company :</label><input className="forminput" type='text' placeholder='Enter Company' required />
             </div>
             <div className='formgroup removforem'>
-              <textarea cols="42" rows="5" id='teareafo' placeholder='Enter the message'></textarea>
+              <textarea cols="46" rows="5" id='teareafo' placeholder='Enter the message'></textarea>
             </div>
             <div className='formgroup removforem'>
               <input type='submit' id='forbutton' />
