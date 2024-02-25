@@ -195,7 +195,7 @@ function App() {
 
           <div id='skillgroup'>
             <center>
-              <h1>Skills</h1>
+              <h1 className="skills_head">Skills</h1>
 
               <hr id='hra1' />
             </center>

@@ -1,5 +1,10 @@
 @media only screen and (min-width: 250px) and (max-width: 500px) {
-
+    :root{
+        --bgcolor : #FBFADA;
+        --primary : #12372A;
+        --secondary: #436850;
+        --tertiary: #ADBC9F;
+      }
     /*nav bar formatting*/
     /*logo formatting start here*/
     #logo {
@@ -49,12 +54,11 @@
 
     .nava {
         padding: 4px;
-        color: white;
+        color: b;
     }
 
     #hireme {
         padding: 6px;
-        border: 2px solid white;
         font-size: auto;
         line-height: none;
     }
@@ -97,12 +101,12 @@
         margin-bottom: 10px;
         border: none;
         border-radius: 10px;
-        background-color: rgb(59, 56, 56);
+        background-color: var(--secondary);
     }
     #teareafo{
-        padding: 4px;
-        border-radius: 4px;
-        margin: 2px;
-        columns: 38;
+        padding: 2px;
+        border-radius: 2px;
+        margin: auto;
+        columns: 30;
       }
 }

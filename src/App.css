@@ -1,3 +1,10 @@
+:root{
+  --bgcolor : #FBFADA;
+  --primary : #12372A;
+  --secondary: #436850;
+  --tertiary: #ADBC9F;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,18 +15,22 @@
 
 }
 ::-webkit-scrollbar-track{
-  background: black;
+  background: var(--primary);
   padding: 4px;
 }
 ::-webkit-scrollbar-thumb{
-  background: linear-gradient(rgb(80, 80, 80),rgb(204, 203, 203));
+  background: linear-gradient(var(--secondary),var(--bgcolor));
   border-radius: 4px;
   margin: 2px;
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: var(--primary);
+  color: var(--bgcolor);
+}
+body::selection {
+  background-color: var(--bgcolor);
+  color: var(--primary);
 }
 #mu{
   visibility: hidden;
@@ -43,7 +54,7 @@ body {
 #logoh {
   padding: 10px;
   margin: 10px;
-  color: white;
+  color: var(--bgcolor);
   font-size: 24px;
   font-weight: 800;
 }
@@ -51,13 +62,11 @@ body {
 /*logo formatting ends here*/
 #navbar {
   position: sticky;
-  margin: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   top: 0;
-  background-color: black;
-  border-radius: 4px;
+  background-color: var(--primary);
 }
 
 #navele {
@@ -77,50 +86,50 @@ body {
   text-decoration: none;
   border-radius: 10px;
   padding: 10px;
-  color: white;
+  color: var(--bgcolor);
 }
 
 .nava:hover {
   border-radius: none;
   border: none;
-  color: black;
-  background-color: white;
+  color: var(--primary);
+  background-color: var(--bgcolor);
 }
 
 #hireme {
   text-decoration: none;
-  color: white;
+  color: var(--bgcolor);
   padding: 10px;
-  border: 2px solid white;
+  border: 2px solid var(--bgcolor);
   border-radius: 10px;
   font-size: 20px;
   line-height: 6;
 }
 
 #hireme:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--secondary);
+  color: var(--bgcolor);
   border: none;
 }
 
 /*nav bar ended*/
 /*header section*/
 #header {
-  background-color: black;
-  color: white;
+  background-color: var(--primary);
+  color: var(--bgcolor);
   padding: 20px;
   height: auto;
 }
 
 #greet {
-  color: rgb(228, 225, 225);
+  color: var(--bgcolor);
   font-weight: 600;
   font-size: 18px;
   font-family: 'Courier New', Courier, monospace;
 }
 
 #namefor {
-  color: rgb(187, 187, 241);
+  color: var(--tertiary);
 }
 
 #name {
@@ -130,7 +139,7 @@ body {
 }
 
 .spani {
-  color: rgb(187, 187, 241);
+  color: var(--tertiary);
 }
 
 #ifo {
@@ -141,14 +150,15 @@ body {
 /*header section*/
 /*about me start here*/
 #aboutme {
-  background-color: white;
-  color: black;
+  background-color: var(--bgcolor);
+  color: var(--secondary);
   text-align: center;
   padding: 10px;
 }
 
+
 #hra {
-  border: 4px solid rgb(187, 187, 241);
+  border: 4px solid var(--tertiary);
   border-radius: 10px;
   width: 100px;
   align-self: center;
@@ -172,11 +182,12 @@ body {
 #des {
   margin: 10px;
   padding: 20px;
-  color: black;
+  color: var(--primary);
   width: 50%;
   line-height: 1.6;
   text-align: justify;
 }
+
 
 #profilebg{
   width: auto;
@@ -190,7 +201,7 @@ body {
 }
 
 #hra {
-  background-color: black;
+  background-color: var(--primary);
 }
 /*about ex start here*/
 #about_ex{
@@ -229,15 +240,15 @@ body {
 /*card css start here*/
 
 #card {
-	border: 2px solid rgb(187, 187, 241);
-  box-shadow: 1px 1px grey;
-	border-radius: 6px;
+	border: 2px solid var(--tertiary);
+  box-shadow: 1px 1px var(--primary);
+	border-radius: 10px;
 	margin: 20px;
 	padding: 10px;
 	height: 400px;
 	width: 250px;
-	background-color: white;
-	color: black;
+	background-color: var(--bgcolor);
+	color: var(--primary);
 	z-index: 0.2;
 }
 
@@ -246,14 +257,14 @@ body {
 	height: 40%;
 	width: 250px;
 	margin: 2px;
-	/*border: 1px solid white;*/
+	/*border: 1px solid var(--bgcolor);*/
 	border-radius: 10px;
 }
 
 #info-a {
 	margin: 10px;
 	padding: 8px;
-	/*border: 1px solid white;*/
+	/*border: 1px solid var(--bgcolor);*/
 }
 
 .card-h {
@@ -268,8 +279,8 @@ body {
 
 .explore {
 	text-decoration: none;
-  background-color: rgb(187, 187, 241);
-	color: darkblue;
+  background-color: var(--primary);
+	color: var(--bgcolor);
 	padding: 12px;
 	margin: 20px;
 	border-radius: 10px;
@@ -277,8 +288,8 @@ body {
 }
 
 .explore:hover {
-	border: 2px solid darkblue;
-	color: rgb(1, 1, 95);
+	border: 2px solid var(--bgcolor);
+	color: var(--tertiary);
 }
 
 /*card css ends here*/
@@ -303,7 +314,7 @@ body {
 
 }
 #backg::-webkit-scrollbar-track{
-  background: black;
+  background: var(--primary);
 }
 #backg::-webkit-scrollbar-thumb{
   border-radius: 10px;
@@ -312,46 +323,54 @@ body {
 
 .
 /* projects section ends here*/
-.boldhead {
+.boldhead{
   font-style: italic;
   font-weight: 1000;
   font-size: 20px;
 }
 
 .boldhead:hover {
-  background-color: antiquewhite;
+  background-color: antiquevar(--bgcolor);
 }
 
 /*achivemets section start here*/
 #achive {
-  background-color: white;
-  color: black;
+  background-color: var(--bgcolor);
+  color: var(--primary);
   padding: 20px;
+}
+#achive::selection {
+  background-color: var(--primary);
+  color: var(--bgcolor);
 }
 
 #rangeo {
   margin: 10px;
-  border: 4px solid white;
+  border: 4px solid var(--bgcolor);
   padding: 0;
   border-radius: 10px;
   height: 12px;
   width: 120px;
-  box-shadow: 1px 1px black;
+  box-shadow: 1px 1px var(--primary);
 }
 
 .rangei {
-  background-color: black;
+  background-color: var(--primary);
   margin: 1px;
   border-radius: 10px;
   height: 8px;
-  border: 1px solid white;
+  border: 1px solid var(--bgcolor);
   padding: 0;
 }
 
+.skills_head{
+  color: var(--bgcolor);
+}
+
 #skillgroup {
-  background-color: rgb(187, 187, 241);
+  background-color: var(--secondary);
   border-radius: 10px;
-  box-shadow: 1px 1px black;
+  box-shadow: 1px 1px var(--primary);
   padding: 10px;
   width: auto;
 }
@@ -364,7 +383,7 @@ body {
 }
 
 .skhead {
-  color: white;
+  color: var(--bgcolor);
   text-align: left;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -425,31 +444,26 @@ body {
   border-radius: 10px;
   margin: 20px;
   text-decoration: none;
-  color: white;
-  background-color: black;
+  color: var(--bgcolor);
+  background-color: var(--primary);
 }
 
 #read:hover {
-  border: 1px solid black;
-  color: black;
-  background-color: white;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background-color: var(--bgcolor);
 }
 
 #hra1 {
-  border: 4px solid white;
+  border: 4px solid var(--bgcolor);
   border-radius: 10px;
   width: 100px;
   align-self: center;
   margin: 10px;
 }
 .boldbody{
-  color: rgb(123, 123, 236);
-}
-.boldbody::first-letter{
-  color: rgb(39, 39, 187);
-}
-#diffren{
-  color: rgb(112, 112, 112);
+  color: var(--secondary);
+  font-weight: bold;
 }
 /*achievements section ends here*/
 /*contact sectcion start here*/
@@ -472,14 +486,14 @@ body {
 #contactform {
   margin: 10px;
   padding: 10px;
-  border: 2px solid white;
+  border: 2px solid var(--bgcolor);
   border-radius: 10px;
 }
 
 .formgroup {
   padding: 10px;
   margin: 10px;
-  background-color: rgb(37, 37, 37);
+  background-color: var(--secondary);
   border-radius: 10px;
 }
 #conform{
@@ -501,21 +515,21 @@ body {
 #forbutton {
   height: 30px;
   width: 100%;
-  background-color: white;
-  color: black;
+  background-color: var(--bgcolor);
+  color: var(--primary);
   border-radius: 10px;
   border: none;
 }
 
 #forbutton:hover {
-  background-color: black;
-  color: white;
-  border: 2px solid white;
+  background-color: var(--secondary);
+  color: var(--bgcolor);
+  border: 2px solid var(--tertiary);
 }
 
 .forminput::placeholder {
   padding: 2px;
-  color: grey;
+  color: var(--tertiary);
   font-size: 14px;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -525,7 +539,7 @@ body {
 }
 #teareafo::placeholder {
   padding: 2px;
-  color: grey;
+  color: var(--tertiary);
   font-size: 14px;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -536,29 +550,29 @@ body {
 
 #emailme {
   text-decoration: none;
-  color: white;
+  color: var(--bgcolor);
 }
 
 #emailme:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--bgcolor);
+  color: var(--primary);
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
 }
 .socialconnt{
-  background-color: white;
+  background-color: var(--bgcolor);
   height: 40px;
   margin: 10px;
   padding: 10px;
   border-radius: 2px;
 }
 #linkedicon:hover{
-  background-color: rgb(187, 187, 241);
+  background-color: var(--tertiary);
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 #gicon:hover{
-  background-color: rgb(187, 187, 241);
+  background-color: var(--tertiary);
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 /*contact section ends here*/
