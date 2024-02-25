@@ -307,7 +307,7 @@ function App() {
               <label className='formlab'>Company :</label><input className="forminput" type='text' placeholder='Enter Company' required />
             </div>
             <div className='formgroup removforem'>
-              <textarea cols="46" rows="5" id='teareafo' placeholder='Enter the message'></textarea>
+              <textarea  rows="4" id='teareafo' placeholder='Enter the message'></textarea>
             </div>
             <div className='formgroup removforem'>
               <input type='submit' id='forbutton' />

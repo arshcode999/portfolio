@@ -530,18 +530,16 @@ body::selection {
 .forminput::placeholder {
   padding: 2px;
   color: var(--tertiary);
-  font-size: 14px;
-  font-family: 'Courier New', Courier, monospace;
-}
+  font-size: 14px;}
 #teareafo{
   padding: 10px;
   border-radius: 10px;
+  width: 90%;
 }
 #teareafo::placeholder {
   padding: 2px;
   color: var(--tertiary);
   font-size: 14px;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 .removforem {
