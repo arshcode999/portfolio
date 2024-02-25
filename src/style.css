@@ -1,9 +1,9 @@
 @media only screen and (min-width: 250px) and (max-width: 500px) {
     :root{
-        --bgcolor : #f8f8e7;
-        --primary : #12372A;
-        --secondary: #436850;
-        --tertiary: #ADBC9F;
+        --bgcolor : #F0F3FF;
+        --primary : #211951;
+        --secondary: #836FFF;
+        --tertiary: #15F5BA;
       }
     /*nav bar formatting*/
     /*logo formatting start here*/
