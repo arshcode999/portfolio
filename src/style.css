@@ -1,6 +1,6 @@
 @media only screen and (min-width: 250px) and (max-width: 500px) {
     :root{
-        --bgcolor : #FBFADA;
+        --bgcolor : #f8f8e7;
         --primary : #12372A;
         --secondary: #436850;
         --tertiary: #ADBC9F;
