@@ -1,8 +1,8 @@
 :root{
-  --bgcolor : #F0F3FF;
-  --primary : #211951;
-  --secondary: #836FFF;
-  --tertiary: #15F5BA;
+  --bgcolor : #f7f7fa;
+  --primary : #4831d4;
+  --secondary: #0a0433;
+  --tertiary: #ccf381;
 }
 
 * {
@@ -34,6 +34,35 @@ body::selection {
 }
 #mu{
   visibility: hidden;
+}
+#uer_ui{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#devloper_profile{
+  width: auto;
+  background-color: var(--tertiary);
+  padding: 50px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userui_hr{
+  background-color: var(--primary);
+}
+#hr_dev{
+  color: var(--primary);
+}
+#head_post{
+  font-size: 40px;
+  color: var(--tertiary);
+  font-weight: bold;
+}
+#photo_devloper{
+  height: 100%;
 }
 #muroc {
   height: 20px;
@@ -119,6 +148,7 @@ body::selection {
   color: var(--bgcolor);
   padding: 20px;
   height: auto;
+  width: 50%;
 }
 
 #greet {
@@ -158,7 +188,7 @@ body::selection {
 
 
 #hra {
-  border: 4px solid var(--tertiary);
+  border: 4px solid var(--secondary);
   border-radius: 10px;
   width: 100px;
   align-self: center;
@@ -240,8 +270,8 @@ body::selection {
 /*card css start here*/
 
 #card {
-	border: 2px solid var(--tertiary);
-  box-shadow: 1px 1px var(--primary);
+	border: 2px solid var(--primary);
+  box-shadow: 1px 1px var(--tertiary);
 	border-radius: 10px;
 	margin: 20px;
 	padding: 10px;
@@ -351,7 +381,7 @@ body::selection {
   border-radius: 10px;
   height: 12px;
   width: 120px;
-  box-shadow: 1px 1px var(--primary);
+  box-shadow: 1px 1px var(--tertiary);
 }
 
 .rangei {
@@ -368,12 +398,13 @@ body::selection {
 }
 
 #skillgroup {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   border-radius: 10px;
   box-shadow: 1px 1px var(--primary);
   padding: 10px;
   width: auto;
 }
+
 
 .skillitem {
   display: flex;
@@ -386,6 +417,9 @@ body::selection {
   color: var(--bgcolor);
   text-align: left;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#skills>h2{
+  color: var(--tertiary);
 }
 
 #groupskilldes {
@@ -493,7 +527,7 @@ body::selection {
 .formgroup {
   padding: 10px;
   margin: 10px;
-  background-color: var(--secondary);
+  background-color: var(--primary);
   border-radius: 10px;
 }
 #conform{
@@ -529,7 +563,7 @@ body::selection {
 
 .forminput::placeholder {
   padding: 2px;
-  color: var(--tertiary);
+  color: var(--primary);
   font-size: 14px;}
 #teareafo{
   padding: 10px;
@@ -538,7 +572,7 @@ body::selection {
 }
 #teareafo::placeholder {
   padding: 2px;
-  color: var(--tertiary);
+  color: var(--primary);
   font-size: 14px;
 }
 

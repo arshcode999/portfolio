@@ -44,10 +44,10 @@ function App() {
           <img alt="controle-button-icons" id='muroclose' onClick={menclose} src={close} />
         </div>
       </div>
+      <div id='uer_ui'>
       <div id='header'>
         <br />
-        <br />
-        <br />
+        <p id='head_post'>Frontend<br/>Developer</p>
         <br />
         <p id='greet'>Hello, my name is</p>
         <p id='name'>Ar<span id='namefor'>sh</span></p>
@@ -57,7 +57,18 @@ function App() {
           I'm <span className='spani'>confident</span> in my ability to <span className='spani'>learn new skills</span> and to apply them to my work. I'm also a quick learner and I'm able to adapt to new situations quickly.</p>
         <br />
         <a href='/' id='hireme'>Hire me</a>
+        
       </div>
+      <div id='devloper_profile'>
+        <div id='profilebg'>
+            <img alt="profile image" id='photo_devloper' className='bgresvg' src="https://media.licdn.com/dms/image/D5603AQG7j64lBR5fAA/profile-displayphoto-shrink_200_200/0/1705372207571?e=2147483647&v=beta&t=NloSSa-AC_UyBfB1GP-8eleEMIw1wz_RusBEIzhCfcE" />
+            <center>
+              <hr id='hra' className="userui_hr" />
+              <h1 id='hr_dev'>Arsh</h1>
+            </center>
+          </div>
+        </div>
+     </div>
 
       <div id='aboutme'>
         <h1>About me</h1>

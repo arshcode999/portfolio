@@ -1,9 +1,9 @@
 @media only screen and (min-width: 250px) and (max-width: 500px) {
     :root{
-        --bgcolor : #F0F3FF;
-        --primary : #211951;
-        --secondary: #836FFF;
-        --tertiary: #15F5BA;
+        --bgcolor : #f7f7fa;
+        --primary : #4831d4;
+        --secondary: #0a0433;
+        --tertiary: #ccf381;
       }
     /*nav bar formatting*/
     /*logo formatting start here*/
@@ -16,7 +16,9 @@
         margin: 4px;
         font-size: auto;
     }
-    
+    #header {
+        width: auto;
+      }
     #photo {
         height: 200px;
       }
@@ -101,7 +103,7 @@
         margin-bottom: 10px;
         border: none;
         border-radius: 10px;
-        background-color: var(--secondary);
+        background-color: var(--primary);
     }
     #teareafo{
         padding: 2px;
